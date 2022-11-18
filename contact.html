@@ -1,10 +1,16 @@
-    <h1>Nous Contacter</h1>
+<h1>Nous Contacter</h1>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis beatae corrupti nulla quia enim dolorem blanditiis praesentium eligendi maiores quae porro iste minima quam id esse nobis, iure deleniti a.
-    </p>
+ <form action="traitement-contact.php" method="post">
 
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consequuntur sit soluta nobis alias fugiat commodi unde corrupti enim ab hic dicta, quasi magnam atque ipsa nisi quibusdam eligendi ducimus?
-    </p>
+    <label for="id_nom">Votre Nom: </label> <br>
+    <input type="text" name="nom" id="id_nom"> <br> <br>
 
+    <label for="id_email">Votre email:</label> <br>
+    <input type="email" name="email" id="id_email"> <br> <br>
+
+    <label for="id_message">Votre Message: </label> <br>
+    <textarea name="message" id="id_message" cols="30" maxlength="255" rows="10"></textarea> <br>
+
+    <input type="submit" value="Soumettre">
+
+ </form>
