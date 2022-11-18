@@ -11,7 +11,7 @@ if($envoiFormulaire){
     
 
     echo "<h2>Cette page a reçu comme information</h2>"; 
-    echo "<p>$nomRecu</p>";
-    echo "<p>$emailRecu</p>"; 
-    echo "<p>$messageRecu</p>";
+    echo "<p>Nom: $nomRecu</p>";
+    echo "<p>Email: $emailRecu</p>"; 
+    echo "<p> Message: $messageRecu</p>";
 }

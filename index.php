@@ -24,12 +24,17 @@
         
         <?php
 
+            include("Formation.php");
+            include("FormationModel.php");
+
             if(isset($_GET["page"])){
                 $maPage= $_GET["page"];
 
                 switch ($maPage) {
                     case 'formation':
-                        include("formations.html");
+                        $model = new FormationModel();
+                        $toutesFormations = $model->getAllTrainings(); 
+                        include("formations.php");
                         break;
 
                     case 'recrutement':
